@@ -22,7 +22,10 @@ Uses impress.js
 	<meta name="description" content="A presentation on my project with the use of impress.js"/>
 	<meta name="author" content="Ben Newsome" />
 
+<!--	<link rel="stylesheet" href="css/presentation.scc" />	-->
+	<link rel="stylesheet" href="css/impress-demo.css" />
 	<link rel="stylesheet" href="css/substep.css" />
+	<link rel="stylesheet" href="css/impress-progress.css"> 
 
 	<link rel="shortcut icon" href="icon.png" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -38,8 +41,89 @@ Uses impress.js
 
 
 
+<div class="progressbar"></div><div></div>
+<div class="progress"></div>
+
 <div id="impress">
-	<div id="title" class="step slide"
+
+<!------------------------------------------------------------------------------------------------>
+	<div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+		<h1> My ES4 presentation on stuff </h1>
+		<footer align=center> By Ben Newsome </footer>
+	</div>
+
+<!------------------------------------------------------------------------------------------------>
+	
+	<div id="Spatial_Resolution" class="step" data-x="-2000" data-y="1000">
+		<h2> Resolution </h2>
+		<ul class="list">
+		<li class="substep"> Here is some text <br> </li><br>
+
+		<li class="substep"> And here is some more<br> </li><br>
+		</ul>
+	</div>
+
+<!------------------------------------------------------------------------------------------------>
+	<div id="Ozone_Production" class="step" data-x="-1000" data-y="1000">
+		<h2> Ozone production </h2>
+		<img src="img/placeholder.png" width="800" height="600" alt="Ozone_vs_VOC_vs_NOx" >
+	</div>
+<!------------------------------------------------------------------------------------------------>
+	<div id="Scinario" class="step" data-x="-1000" data-y="2000">
+		<h2 style="position:absolute; left:50%; top:-100%;"> Scinario </h2>
+		<h3 style="position:absolute; left:5%; top:-60%;">Take for example an area with high polutants next to an area with low polutants.</h3>
+		<br>
+		<img style="position:absolute; left:0%; top:80%;" src="img/placeholder.png" width="400" height="300" alt="A factory">
+		<img style="position:absolute; right:0%; top:80%;" src="img/placeholder.png" width="400" height="300" alt="A factory">
+	</div>
+
+
+<!------------------------------------------------------------------------------------------------>
+	<div id="Ox_vs_Resolution" class="step" data-x="-2000" data-y="2000">
+	<h2 style="position:absolute; left:50%; top:-100%;"> Ozone dependency on Resolution </h2>
+	<img style="position:absolute; left:0%; top:80%;" src="img/placeholder.png" width="400" height="300" alt="A factory">
+	<img style="position:absolute; right:0%; top:80%;" src="img/placeholder.png" width="400" height="300" alt="A factory">
+	</div>
+<!------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------>
+
+
+
+
+<!------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------>
+</div>
+
+<!--
+The following should all be at the bottom and nothing below here should need changing
+-->
+<div class="hint">
+        <p> Use a spacebar or arrow keys to navagate </p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+
+<script src="js/impress-progress.js"></script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
+          
+		
 
 
 
