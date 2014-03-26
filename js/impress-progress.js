@@ -10,7 +10,7 @@
 		  stepids[i+1] = steps[i].id;
 		}
 	});
-	var progressbar = document.querySelector('div.progressbar div');
+	var progressbar = document.querySelector('div.progressbar');
 	var progress = document.querySelector('div.progress');
 
 	if (null !== progressbar || null !== progress) {      
@@ -26,7 +26,7 @@
 	function updateProgressbar(slideId) {
 		var slideNumber = stepids.indexOf(slideId);
 		if (null !== progressbar) {
-			progressbar.style.width = (100 / (stepids.length - 1) * (slideNumber)).toFixed(2) + '%';
+			progressbar.style.width = ( (slideNumber*100) / (stepids.length - 1)).toFixed(2) + '%';
 		}
 		if (null !== progress) {
 			progress.innerHTML = slideNumber + '/' + (stepids.length-1);
