@@ -804,7 +804,7 @@
         //   as another way to moving to next step... And yes, I know that for the sake of
         //   consistency I should add [shift+tab] as opposite acion...
 
-		  // added [escape] to sent it to the slide labeld 'Overview' which should be the first or last slide.
+		  // added [escape] to sent it to the slide labeld 'overview' which should be the first or last slide.
 
         document.addEventListener("keyup", function ( event ) {
             if ( event.keyCode === 9 || event.keyCode === 27 || ( event.keyCode >= 32 && event.keyCode <= 34 ) || (event.keyCode >= 37 && event.keyCode <= 40) ) {
@@ -821,9 +821,9 @@
                     case 40: // down
                              api.next();
                              break;
-						  case 27:	// escape
-									  api.goto(Overview);
-									  break;
+                    case 27: // escape
+                             api.goto(overview);
+                             break;
                 }
                 
                 event.preventDefault();
