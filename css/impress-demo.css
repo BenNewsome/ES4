@@ -166,6 +166,16 @@ h4 {
 	text-align:	center
 }
 
+.alignleft {
+	float:	left;
+}
+
+.alignright {
+	float:	right;
+}
+
+
+
 .fallback-message {
     font-family: sans-serif;
     line-height: 1.3;
