@@ -66,6 +66,12 @@ Uses impress.js
 	</div>
 
 <!------------------------------------------------------------------------------------------------>
+	<div id="Ozone_Production" class="step" data-x="-1000" data-y="1000">
+		<h2> Ozone production </h2>
+		<img src="img/placeholder.png" width="800" height="600" alt="Ozone_vs_VOC_vs_NOx" >
+		<!-- insert 3 points, one with high VOC's, one with high NOx, and one inbetween showing more Ozone -->
+	</div>
+<!------------------------------------------------------------------------------------------------>
 	<div id="Scinario" class="step" data-x="-1000" data-y="2000">
 		<h2> Scinario </h2>
 		<h3> Take for example an area with high polutants next to an area with low polutants.</h3>
@@ -77,12 +83,6 @@ Uses impress.js
 			<p class="alignleft" > High Emmisions </h4>
 			<p class="alignright"> Low Emmisions </h4>
 		</div>
-	</div>
-<!------------------------------------------------------------------------------------------------>
-	<div id="Ozone_Production" class="step" data-x="-1000" data-y="1000">
-		<h2> Ozone production </h2>
-		<img src="img/placeholder.png" width="800" height="600" alt="Ozone_vs_VOC_vs_NOx" >
-		<!-- insert 3 points, one with high VOC's, one with high NOx, and one inbetween showing more Ozone -->
 	</div>
 <!------------------------------------------------------------------------------------------------>
 	<div id="Ox_vs_Resolution" class="step" data-x="-2000" data-y="2000">
@@ -106,7 +106,7 @@ Uses impress.js
 	<div id="Resolution_Expected_Results" class="step" data-x="-1000" data-y="3000">
 	<h2> Expected Results </h2>
 	<ul class="boringlist">
-		<li class="substep"><h3> Global Ozone Budget should change (Increase?) </h3><br></li>
+		<li class="substep"><h3> Global Ozone Budget should change </h3><br></li>
 		<li class="substep"><h3> Better more acurate results </h3><br></li>
 	</ul>
 	</div>
@@ -121,18 +121,11 @@ Uses impress.js
 	<div id="MCM" class="step" data-x="1000" data-y="1000">
 	<h2> MCM </h2>
 	<h3 align=center class="substep"> <a href="http://mcm.leeds.ac.uk/MCM/home.htt">The Master Chemical Mechanism </a>
-	<h3 class="substep"> 'The Master Chemical Mechanism (MCM) is a near-explicit chemical mechanism which describes the detailed gas-phase chemical processes involved in the tropospheric degradation of a series of primary emitted volatile organic compounds (VOCs). Currently, the degradation of methane and 142 non-methane VOCs is represented.' </h3>
+	<h3 class="substep"> "The Master Chemical Mechanism (MCM) is a near-explicit chemical mechanism which describes the detailed gas-phase chemical processes involved in the tropospheric degradation of a series of primary emitted volatile organic compounds (VOCs). Currently, the degradation of methane and 142 non-methane VOCs is represented." </h3>
 	</div>
+
 <!------------------------------------------------------------------------------------------------>
-	<div id="MCM_Implimentation" class="step" data-x="1000" data-y="2000">
-	<h2> MCM Implimentaton </h2>
-	<ul class="boringlist">
-		<li class="substep"><h3> To impliment these all these species into the model, the framework has had to be re-written to allow many more species then were initialy intended. </h3><br></li>
-		<li class="substep"><h3> Several other factors including deposition rates for the new species and linking up photolysis rates need to be accounted for. </h3><br></li>
-	</ul> 
-	</div>
-<!------------------------------------------------------------------------------------------------>
-	<div id="MCM_Resolution" class="step" data-x="0" data-y="2000">
+	<div id="MCM_Resolution" class="step" data-x="1000" data-y="2000">
 	<h2> MCM Resolution </h2>
 	<h3 class="substep"> The MCM currently contains: <h3>
 	<ul class="boringlist">
@@ -142,10 +135,21 @@ Uses impress.js
 	</ul>
 	</div>
 <!------------------------------------------------------------------------------------------------>
+	<div id="MCM_Implimentation" class="step" data-x="0" data-y="2000">
+	<h2> MCM Implimentaton </h2>
+	<ul class="boringlist">
+		<li class="substep"><h3> To impliment all these species into the model, the framework has had to be re-written to allow many more species then were initialy intended. </h3><br></li>
+		<li class="substep"><h3> Several other factors including deposition rates for the new species and linking up photolysis rates need to be accounted for. </h3><br></li>
+	</ul> 
+	</div>
+<!------------------------------------------------------------------------------------------------>
 	<div id="Lower_resolution" class="step" data-x="0" data-y="3000">
 	<h2> Lower Resolution </h2>
-	<h3 class="substep"> Using the MCM chemistry scheme as a benchmark for atmospheric simulations, more computationaly effiecent schemes can be compaired and verified.</h3>
-	<h3 class="substep"> Statistical methods can be applied to find which speceis have the largest and smalest effect, and new chemistry schemes can be generated. </h3>
+	<ul class="boringlist">
+	<li><h3 class="substep"> Using the MCM chemistry scheme as a benchmark for atmospheric simulations, more computationaly effiecent schemes can be compaired and verified.</h3></li>
+	<br>
+	<li><h3 class="substep"> Statistical methods can be applied to find which speceis have the largest and smalest effect, and new chemistry schemes can be generated. </h3></li>
+	</ul>
 	</div>
 <!------------------------------------------------------------------------------------------------>
 	<div id="Expected_results" class="step" data-x="1000" data-y="3000">
